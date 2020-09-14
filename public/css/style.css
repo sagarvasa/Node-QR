@@ -1,0 +1,102 @@
+html, body {
+    min-height: 100%;
+}
+body, div, form, input, textarea, p { 
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+}
+h1 {
+    margin: 0;
+    z-index: 2;
+}
+.qrbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding: 20px;
+    margin-top: 1em;
+}
+form, .qrdiv{
+    width: 80%;
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 #4c41b6; 
+}
+   
+input, textarea {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input {
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+textarea {
+    width: calc(100% - 12px);
+    padding: 5px;
+}
+.item:hover p, input:hover::placeholder {
+    color: #4c41b6;
+}
+.item input:hover, .item textarea:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 6px 0 #4c41b6;
+    color: #4c41b6;
+}
+.item {
+    position: relative;
+    margin: 10px 0;
+}
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #4c41b6;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin: 15px;
+}
+button:hover {
+    background: #4c41b6;
+}
+.isQR, .isURI {
+    text-align: center;
+}
+.isURI h4 {
+    width: 80%;
+    margin: 3em auto;
+    overflow-wrap: break-word
+}
+@media (min-width: 568px) {
+    .qrbox {
+        margin-top: 5em;
+    }
+    .qr-setting {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .qr-setting .item {
+        width: calc(50% - 8px);
+    }
+    input {
+        width: calc(50% - 20px);
+    }
+    .qr-setting input {
+        width: calc(100% - 12px);
+    }
+}

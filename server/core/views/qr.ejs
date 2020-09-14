@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sagar Vasa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node-QR</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="qrbox">
+        <div class="qrdiv">
+            <div class="item isQR">
+                <h1 style="text-align: center;">Your Generated QR Code</h1>
+                <img src="<%= dataURL %>">
+            </div>
+            <div class="item isURI" style="display: none;">
+                <h1 style="text-align: center;">Your QR code URI is</h1>
+                <h4 style="text-align: center;"><%= dataURL %></h4>
+            </div>
+        </div>     
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        var isURI = "<%= isURI %>";
+
+        if(isURI == "true") {
+            $(".isURI").show();
+            $(".isQR").hide();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sagar Vasa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node-QR</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <div class="qrbox">
+        <form method="POST">
+            <div class="item">
+                <p>URL or Text</p>
+                <textarea rows="3" required name="content"
+                    placeholder="Please enter URL or text behind the QR code"></textarea>
+            </div>
+            <div class="qr-setting">
+                <div class="item">
+                    <p>Height of QR code</p>
+                    <input type="number" name="height" max=1000 min=50 placeholder="Height of QR code" />
+                </div>
+                <div class="item">
+                    <p>Width of QR code</p>
+                    <input type="number" name="width" max=1000 min=50 placeholder="Width of QR code" />
+                </div>
+            </div>
+            <div class="qr-setting">
+            <div class="item">
+                <p>Upload logo to be shown in QR code (Prefer size : 1/8 of QR code width/height)</p>
+                <input type="file" accept="image/*" name="logo" placeholder="Upload logo to be shown in QR code" id="logo" />
+            </div>
+            <div class="item">
+                <p>Color of QR code</p>
+                <input type="color" name="color" placeholder="Color of QR code" value="#4c41b6"/>
+            </div>
+            <input type="hidden" name="logoImage" value="" class="logoImage"/>
+        </div>
+            <div class="btn-block">
+                <button type="submit" id="generateQR">Get QR</button>
+                <button type="submit" id="generateQRURI">Get QR URI</button>
+                <button type="submit" id="downloadQR">Download QR</button>
+            </div>
+        </form>
+    </div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+
+</body>
+
+
+</html>

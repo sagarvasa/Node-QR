@@ -1,0 +1,32 @@
+{
+  "name": "node-qr",
+  "version": "1.0.0",
+  "description": "Create colourful QR codes along with logo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagarvasa/Node-QR.git"
+  },
+  "keywords": [
+    "Node.js",
+    "QR"
+  ],
+  "author": "Sagar Vasa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagarvasa/Node-QR/issues"
+  },
+  "homepage": "https://github.com/sagarvasa/Node-QR#readme",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "canvas": "2.6.1",
+    "ejs": "3.1.5",
+    "express": "4.17.1",
+    "hex-rgb": "4.2.0",
+    "qrcode": "1.4.4"
+  }
+}
