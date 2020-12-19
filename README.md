@@ -1,6 +1,8 @@
 # Node-QR
 POC for creating colourful QR codes along with logo
 
+# Image
+![Login](/public/images/QR_screenshot.png)
 # Steps to start
 1. Clone/Fork the repo in your workspace
 2. Install the dependancies using `npm install`. Make sure node.js & npm is already installed in your system
